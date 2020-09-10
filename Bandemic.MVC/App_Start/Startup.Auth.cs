@@ -6,6 +6,7 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
 using Bandemic.MVC.Models;
+using Bandemic.Data;
 
 namespace Bandemic.MVC
 {
