@@ -56,6 +56,7 @@
   <ItemGroup>
     <Compile Include="ArtistService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TourDateService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Bandemic.Data\Bandemic.Data.csproj">

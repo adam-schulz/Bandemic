@@ -63,17 +63,17 @@ namespace Bandemic.MVC.Controllers
 
             if (model.ArtistId != id)
             {
-                ModelState.AddModelError("", "Id not found");
+                ModelState.AddModelError("", "Id not found.");
                 return View(model);
             }
 
             if (CreateArtistService().UpdateArtist(model))
             {
-                TempData["SaveResult"] = "Artist updated";
+                TempData["SaveResult"] = "Artist updated.";
                 return RedirectToAction("Index");
             }
 
-            ModelState.AddModelError("", "An error occured, unable to create new artist");
+            ModelState.AddModelError("", "An error occured, unable to create new artist.");
             return View(model);
         }
 

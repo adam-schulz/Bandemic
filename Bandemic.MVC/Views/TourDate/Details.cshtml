@@ -1,0 +1,34 @@
+﻿@model Bandemic.Models.TourDate.TourDateDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TourDateDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TourDateId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TourDateId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfShow)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOfShow)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

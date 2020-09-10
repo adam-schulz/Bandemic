@@ -171,6 +171,7 @@
     <Compile Include="Controllers\ArtistController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\TourDateController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -239,6 +240,10 @@
     <Content Include="Views\Artist\Create.cshtml" />
     <Content Include="Views\Artist\Details.cshtml" />
     <Content Include="Views\Artist\Edit.cshtml" />
+    <Content Include="Views\TourDate\Index.cshtml" />
+    <Content Include="Views\TourDate\Create.cshtml" />
+    <Content Include="Views\TourDate\Details.cshtml" />
+    <Content Include="Views\TourDate\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
