@@ -17,6 +17,19 @@ namespace Bandemic.Services
             _userId = userId;
         }
 
+        public ArtistDetail GetArtistDetailById(int id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var artist = ctx.Artists.Single(a => a.Id == id);
+                return new ArtistDetail
+                {
+                    ArtistId = artist.Id,
+                    ArtistName = artist.ArtistName
+                };
+            }
+        }
+
         public bool CreateArtist(ArtistCreate model)
         {
             using (var ctx = new ApplicationDbContext())
@@ -42,6 +55,17 @@ namespace Bandemic.Services
                 });
 
                 return query.ToArray();
+            }
+        }
+
+        public bool UpdateArtist(ArtistEdit model)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var artist = ctx.Artists.Single(a => a.Id == model.ArtistId);
+                artist.ArtistName = model.ArtistName;
+
+                return ctx.SaveChanges() == 1;
             }
         }
     }

@@ -39,6 +39,44 @@ namespace Bandemic.MVC.Controllers
             return View(model);
         }
 
+        public ActionResult Details(int id)
+        {
+            var artist = CreateArtistService().GetArtistDetailById(id);
+            return View(artist);
+        }
+
+        public ActionResult Edit(int id)
+        {
+            var artist = CreateArtistService().GetArtistDetailById(id);
+            return View(new ArtistEdit
+            {
+                ArtistId = artist.ArtistId,
+                ArtistName = artist.ArtistName
+            });
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(int id, ArtistEdit model)
+        {
+            if (!ModelState.IsValid) return View(model);
+
+            if (model.ArtistId != id)
+            {
+                ModelState.AddModelError("", "Id not found");
+                return View(model);
+            }
+
+            if (CreateArtistService().UpdateArtist(model))
+            {
+                TempData["SaveResult"] = "Artist updated";
+                return RedirectToAction("Index");
+            }
+
+            ModelState.AddModelError("", "An error occured, unable to create new artist");
+            return View(model);
+        }
+
         private ArtistService CreateArtistService()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());
