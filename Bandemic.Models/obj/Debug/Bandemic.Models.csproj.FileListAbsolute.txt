@@ -1,0 +1,6 @@
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Models\bin\Debug\Bandemic.Models.dll
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Models\bin\Debug\Bandemic.Models.pdb
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Models\obj\Debug\Bandemic.Models.csprojAssemblyReference.cache
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Models\obj\Debug\Bandemic.Models.csproj.CoreCompileInputs.cache
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Models\obj\Debug\Bandemic.Models.dll
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Models\obj\Debug\Bandemic.Models.pdb

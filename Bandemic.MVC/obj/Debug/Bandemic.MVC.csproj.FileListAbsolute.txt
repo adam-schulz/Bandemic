@@ -1,0 +1,2 @@
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.MVC\obj\Debug\Bandemic.MVC.csprojAssemblyReference.cache
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.MVC\obj\Debug\Bandemic.MVC.csproj.CoreCompileInputs.cache

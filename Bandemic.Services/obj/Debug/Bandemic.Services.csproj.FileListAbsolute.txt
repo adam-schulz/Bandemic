@@ -1,0 +1,6 @@
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Services\bin\Debug\Bandemic.Services.dll
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Services\bin\Debug\Bandemic.Services.pdb
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Services\obj\Debug\Bandemic.Services.csprojAssemblyReference.cache
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Services\obj\Debug\Bandemic.Services.csproj.CoreCompileInputs.cache
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Services\obj\Debug\Bandemic.Services.dll
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Services\obj\Debug\Bandemic.Services.pdb

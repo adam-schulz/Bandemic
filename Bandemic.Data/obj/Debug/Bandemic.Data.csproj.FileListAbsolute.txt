@@ -1,0 +1,16 @@
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Data\bin\Debug\Bandemic.Data.dll.config
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Data\bin\Debug\Bandemic.Data.dll
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Data\bin\Debug\Bandemic.Data.pdb
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Data\bin\Debug\EntityFramework.dll
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Data\bin\Debug\EntityFramework.xml
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Data\obj\Debug\Bandemic.Data.csprojAssemblyReference.cache
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Data\obj\Debug\Bandemic.Data.csproj.CoreCompileInputs.cache
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Data\obj\Debug\Bandemic.Data.csproj.CopyComplete
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Data\obj\Debug\Bandemic.Data.dll
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Data\obj\Debug\Bandemic.Data.pdb
