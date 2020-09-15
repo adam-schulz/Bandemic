@@ -18,7 +18,9 @@ namespace Bandemic.Services
                 return new TourDateDetail
                 {
                     TourDateId = tourDate.TourDateId,
-                    DateOfShow = tourDate.DateOfShow
+                    DateOfShow = tourDate.DateOfShow,
+                    ArtistId = tourDate.ArtistId,
+                    VenueId = tourDate.VenueId
                 };
             }
         }
@@ -28,7 +30,10 @@ namespace Bandemic.Services
             {
                 var newTourDate = new TourDate()
                 {
-                    DateOfShow = model.DateOfShow
+                    DateOfShow = model.DateOfShow,
+                    ArtistId = model.ArtistId,
+                    VenueId = model.VenueId
+
                 };
 
                 ctx.TourDates.Add(newTourDate);
@@ -41,7 +46,10 @@ namespace Bandemic.Services
             {
                 var query = ctx.TourDates.Select(t => new TourDateListItem
                 {
-                    DateOfShow = t.DateOfShow
+                    TourDateId = t.TourDateId,
+                    DateOfShow = t.DateOfShow,
+                    ArtistId = t.ArtistId,
+                    VenueId = t.VenueId
                 });
 
                 return query.ToArray();
@@ -53,6 +61,8 @@ namespace Bandemic.Services
             {
                 var tourDate = ctx.TourDates.Single(t => t.TourDateId == model.TourDateId);
                 tourDate.DateOfShow = model.DateOfShow;
+                tourDate.ArtistId = model.ArtistId;
+                tourDate.VenueId = model.VenueId;
 
                 return ctx.SaveChanges() == 1;
             }

@@ -11,5 +11,7 @@ namespace Bandemic.Models.TourDate
     {
         [Required]
         public DateTime DateOfShow { get; set; }
+        public int ArtistId { get; set; }
+        public int VenueId { get; set; }
     }
 }

@@ -50,7 +50,9 @@ namespace Bandemic.MVC.Controllers
             return View(new TourDateEdit
             {
                 TourDateId = tourDate.TourDateId,
-                DateOfShow = tourDate.DateOfShow
+                DateOfShow = tourDate.DateOfShow,
+                ArtistId = tourDate.ArtistId,
+                VenueId = tourDate.VenueId
             });
         }
 

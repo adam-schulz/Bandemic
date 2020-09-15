@@ -12,5 +12,6 @@ namespace Bandemic.Models.Venue
         public string VenueName { get; set; }
         public string VenueAddress { get; set; }
         public string VenueLocation { get; set; }
+        public int TourDateId { get; set; }
     }
 }

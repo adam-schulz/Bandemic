@@ -26,7 +26,8 @@ namespace Bandemic.Services
                 {
                     ArtistId = artist.ArtistId,
                     ArtistName = artist.ArtistName,
-                    Genre = artist.Genre
+                    Genre = artist.Genre,
+                    TourDateId = artist.TourDateId
                 };
             }
         }
@@ -54,7 +55,8 @@ namespace Bandemic.Services
                 {
                     ArtistId = a.ArtistId,
                     ArtistName = a.ArtistName,
-                    Genre = a.Genre
+                    Genre = a.Genre,
+                    TourDateId = a.TourDateId
                 });
 
                 return query.ToArray();

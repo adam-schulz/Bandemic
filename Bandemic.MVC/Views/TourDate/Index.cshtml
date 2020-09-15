@@ -17,23 +17,35 @@
         <th>
             @Html.DisplayNameFor(model => model.DateOfShow)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ArtistId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VenueId)
+        </th>
         <th></th>
     </tr>
 
 @foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.TourDateId)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DateOfShow)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id = item.TourDateId }) |
-            @Html.ActionLink("Details", "Details", new { id = item.TourDateId }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.TourDateId })
-        </td>
-    </tr>
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.TourDateId)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.DateOfShow)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.ArtistId)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.VenueId)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.TourDateId }) |
+        @Html.ActionLink("Details", "Details", new { id = item.TourDateId }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.TourDateId })
+    </td>
+</tr>
 }
 
 </table>

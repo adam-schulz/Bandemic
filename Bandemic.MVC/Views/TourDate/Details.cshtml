@@ -26,9 +26,25 @@
             @Html.DisplayFor(model => model.DateOfShow)
         </dd>
 
+        <dt>
+            @Html.DisplayNameFor(model => model.ArtistId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ArtistId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VenueId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VenueId)
+        </dd>
+
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TourDateId }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
