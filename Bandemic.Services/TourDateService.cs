@@ -14,10 +14,10 @@ namespace Bandemic.Services
         {
             using (var ctx = new ApplicationDbContext())
             {
-                var tourDate = ctx.TourDates.Single(t => t.Id == id);
+                var tourDate = ctx.TourDates.Single(t => t.TourDateId == id);
                 return new TourDateDetail
                 {
-                    TourDateId = tourDate.Id,
+                    TourDateId = tourDate.TourDateId,
                     DateOfShow = tourDate.DateOfShow
                 };
             }
@@ -51,7 +51,7 @@ namespace Bandemic.Services
         {
             using (var ctx = new ApplicationDbContext())
             {
-                var tourDate = ctx.TourDates.Single(t => t.Id == model.TourDateId);
+                var tourDate = ctx.TourDates.Single(t => t.TourDateId == model.TourDateId);
                 tourDate.DateOfShow = model.DateOfShow;
 
                 return ctx.SaveChanges() == 1;

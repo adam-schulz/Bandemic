@@ -51,7 +51,8 @@ namespace Bandemic.MVC.Controllers
             return View(new ArtistEdit
             {
                 ArtistId = artist.ArtistId,
-                ArtistName = artist.ArtistName
+                ArtistName = artist.ArtistName,
+                Genre = artist.Genre                
             });
         }
 

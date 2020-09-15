@@ -14,6 +14,6 @@ C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Data\obj\D
 C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Data\obj\Debug\Bandemic.Data.csproj.CopyComplete
 C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Data\obj\Debug\Bandemic.Data.dll
 C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Data\obj\Debug\Bandemic.Data.pdb
-C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Data\obj\Debug\Bandemic.Data.Migrations.InitialCreate.resources
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Data\obj\Debug\Bandemic.Data.Migrations.tourDateTable.resources
 C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Data\obj\Debug\Bandemic.Data.csproj.GenerateResource.cache
-C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Data\obj\Debug\Bandemic.Data.Migrations.addedTourDateTable.resources
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Data\obj\Debug\Bandemic.Data.Migrations.tourDateIdTroubleshooting.resources

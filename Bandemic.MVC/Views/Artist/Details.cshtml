@@ -26,9 +26,17 @@
             @Html.DisplayFor(model => model.ArtistName)
         </dd>
 
+        <dt>
+            @Html.DisplayNameFor(model => model.Genre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Genre)
+        </dd>
+
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ArtistId }) |
     @Html.ActionLink("Back to List", "Index")
 </p>

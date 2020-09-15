@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bandemic.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,5 +11,6 @@ namespace Bandemic.Models
     {
         public int ArtistId { get; set; }
         public string ArtistName { get; set; }
+        public Genre Genre { get; set; }
     }
 }

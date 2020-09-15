@@ -10,7 +10,6 @@ namespace Bandemic.Data.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "Bandemic.Data.ApplicationDbContext";
         }
 
         protected override void Seed(Bandemic.Data.ApplicationDbContext context)

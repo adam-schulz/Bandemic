@@ -56,28 +56,22 @@
   <ItemGroup>
     <Compile Include="Artist.cs" />
     <Compile Include="IdentityModels.cs" />
-    <Compile Include="Migrations\202009101641051_InitialCreate.cs" />
-    <Compile Include="Migrations\202009101641051_InitialCreate.Designer.cs">
-      <DependentUpon>202009101641051_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202009102002368_addedTourDateTable.cs" />
-    <Compile Include="Migrations\202009102002368_addedTourDateTable.Designer.cs">
-      <DependentUpon>202009102002368_addedTourDateTable.cs</DependentUpon>
+    <Compile Include="Migrations\202009111409441_tourDateTable.cs" />
+    <Compile Include="Migrations\202009111409441_tourDateTable.Designer.cs">
+      <DependentUpon>202009111409441_tourDateTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TourDate.cs" />
+    <Compile Include="Venue.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202009101641051_InitialCreate.resx">
-      <DependentUpon>202009101641051_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202009102002368_addedTourDateTable.resx">
-      <DependentUpon>202009102002368_addedTourDateTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202009111409441_tourDateTable.resx">
+      <DependentUpon>202009111409441_tourDateTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

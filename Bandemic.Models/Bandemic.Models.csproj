@@ -51,6 +51,16 @@
     <Compile Include="TourDate\TourDateDetail.cs" />
     <Compile Include="TourDate\TourDateEdit.cs" />
     <Compile Include="TourDate\TourDateListItem.cs" />
+    <Compile Include="Venue\VenueCreate.cs" />
+    <Compile Include="Venue\VenueDetail.cs" />
+    <Compile Include="Venue\VenueEdit.cs" />
+    <Compile Include="Venue\VenueListItem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bandemic.Data\Bandemic.Data.csproj">
+      <Project>{91A944A3-7C0B-4D3A-9697-853D7E9F9AED}</Project>
+      <Name>Bandemic.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

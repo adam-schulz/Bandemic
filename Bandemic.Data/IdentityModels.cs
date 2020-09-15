@@ -34,6 +34,7 @@ namespace Bandemic.Data
 
         public DbSet<Artist> Artists { get; set; }
         public DbSet<TourDate> TourDates { get; set; }
+        public DbSet<Venue> Venues { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

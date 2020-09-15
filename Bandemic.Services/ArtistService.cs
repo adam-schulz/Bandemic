@@ -21,11 +21,12 @@ namespace Bandemic.Services
         {
             using (var ctx = new ApplicationDbContext())
             {
-                var artist = ctx.Artists.Single(a => a.Id == id);
+                var artist = ctx.Artists.Single(a => a.ArtistId == id);
                 return new ArtistDetail
                 {
-                    ArtistId = artist.Id,
-                    ArtistName = artist.ArtistName
+                    ArtistId = artist.ArtistId,
+                    ArtistName = artist.ArtistName,
+                    Genre = artist.Genre
                 };
             }
         }
@@ -36,7 +37,8 @@ namespace Bandemic.Services
             {
                 var newArtist = new Artist()
                 {
-                    ArtistName = model.ArtistName
+                    ArtistName = model.ArtistName,
+                    Genre = model.Genre
                 };
 
                 ctx.Artists.Add(newArtist);
@@ -50,8 +52,9 @@ namespace Bandemic.Services
             {
                 var query = ctx.Artists.Select(a => new ArtistListItem
                 {
-                    ArtistId = a.Id,
-                    ArtistName = a.ArtistName
+                    ArtistId = a.ArtistId,
+                    ArtistName = a.ArtistName,
+                    Genre = a.Genre
                 });
 
                 return query.ToArray();
@@ -62,8 +65,9 @@ namespace Bandemic.Services
         {
             using (var ctx = new ApplicationDbContext())
             {
-                var artist = ctx.Artists.Single(a => a.Id == model.ArtistId);
+                var artist = ctx.Artists.Single(a => a.ArtistId == model.ArtistId);
                 artist.ArtistName = model.ArtistName;
+                artist.Genre = model.Genre;
 
                 return ctx.SaveChanges() == 1;
             }
