@@ -19,8 +19,8 @@ namespace Bandemic.Services
                 {
                     TourDateId = tourDate.TourDateId,
                     DateOfShow = tourDate.DateOfShow,
-                    ArtistId = tourDate.ArtistId,
-                    VenueId = tourDate.VenueId
+                    ArtistName = tourDate.Artist.ArtistName,
+                    VenueName = tourDate.Venue.VenueName
                 };
             }
         }

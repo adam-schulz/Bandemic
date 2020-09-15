@@ -17,10 +17,12 @@ namespace Bandemic.Data
         public int ArtistId { get; set; }
         [ForeignKey("ArtistId")]
         [Display(Name = "Artist")]
+        [Required]
         public virtual Artist Artist { get; set; }
         public int VenueId { get; set; }
         [ForeignKey("VenueId")]
         [Display(Name = "Venue")]
+        [Required]
         public virtual Venue Venue { get; set; }
     }
 }

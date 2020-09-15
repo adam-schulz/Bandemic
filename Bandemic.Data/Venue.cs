@@ -15,9 +15,5 @@ namespace Bandemic.Data
         public string VenueName { get; set; }
         public string VenueAddress { get; set; }
         public string VenueLocation { get; set; }
-        public int TourDateId { get; set; }
-        [ForeignKey("TourDateId")]
-        [Display(Name = "Upcoming Shows")]
-        public virtual TourDate TourDate { get; set; }
     }
 }

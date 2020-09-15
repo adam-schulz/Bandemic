@@ -16,9 +16,7 @@ namespace Bandemic.Data
         [Required]
         public string ArtistName { get; set; }
         public Genre Genre { get; set; }
-        public int TourDateId { get; set; }
-        [ForeignKey("TourDateId")]
         [Display(Name = "Upcoming Shows")]
-        public virtual TourDate TourDate { get; set; }
+        public virtual ICollection<TourDate> TourDates { get; set; }
     }
 }

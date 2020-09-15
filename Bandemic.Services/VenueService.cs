@@ -36,8 +36,7 @@ namespace Bandemic.Services
                     VenueId = venue.VenueId,
                     VenueName = venue.VenueName,
                     VenueAddress = venue.VenueAddress,
-                    VenueLocation = venue.VenueLocation,
-                    TourDateId = venue.TourDateId
+                    VenueLocation = venue.VenueLocation
                 };
             }
         }
@@ -51,8 +50,7 @@ namespace Bandemic.Services
                     VenueId = v.VenueId,
                     VenueName = v.VenueName,
                     VenueAddress =v.VenueAddress,
-                    VenueLocation = v.VenueLocation,
-                    TourDateId = v.TourDateId
+                    VenueLocation = v.VenueLocation
                 });
 
                 return query.ToArray();

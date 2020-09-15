@@ -12,6 +12,5 @@ namespace Bandemic.Models
         public int ArtistId { get; set; }
         public string ArtistName { get; set; }
         public Genre Genre { get; set; }
-        public int TourDateId { get; set; }
     }
 }
