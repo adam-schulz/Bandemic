@@ -52,7 +52,7 @@ namespace Bandemic.MVC.Controllers
             {
                 ArtistId = artist.ArtistId,
                 ArtistName = artist.ArtistName,
-                Genre = artist.Genre                
+                Genre = artist.Genre
             });
         }
 

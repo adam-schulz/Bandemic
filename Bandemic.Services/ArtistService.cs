@@ -17,6 +17,10 @@ namespace Bandemic.Services
             _userId = userId;
         }
 
+        public ArtistService()
+        {
+        }
+
         public ArtistDetail GetArtistDetailById(int id)
         {
             using (var ctx = new ApplicationDbContext())
@@ -58,6 +62,14 @@ namespace Bandemic.Services
                 });
 
                 return query.ToArray();
+            }
+        }
+
+        public IEnumerable<Artist> GetArtists()
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                return ctx.Artists.ToList();
             }
         }
 

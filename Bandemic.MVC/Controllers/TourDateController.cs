@@ -1,4 +1,5 @@
-﻿using Bandemic.Models.TourDate;
+﻿using Bandemic.Data;
+using Bandemic.Models.TourDate;
 using Bandemic.Services;
 using System;
 using System.Collections.Generic;
@@ -19,6 +20,17 @@ namespace Bandemic.MVC.Controllers
         public ActionResult Create()
         {
             ViewBag.Title = "New Tour Date";
+
+            List<Artist> Artists = new ArtistService().GetArtists().ToList();
+
+            var query = from a in Artists
+                        select new SelectListItem()
+                        {
+                            Value = a.ArtistId.ToString(),
+                            Text = a.ArtistName
+                        };
+            ViewBag.ArtistId = query.ToList();
+
             return View();
         }
 
@@ -44,9 +56,19 @@ namespace Bandemic.MVC.Controllers
             return View(tourDate);
         }
 
+
         public ActionResult Edit(int id)
         {
             var tourDate = new TourDateService().GetTourDateDetailById(id);
+
+            List<Artist> Artists = new ArtistService().GetArtists().ToList();
+            ViewBag.ArtistId = Artists.Select(a => new SelectListItem()
+            {
+                Value = a.ArtistId.ToString(),
+                Text = a.ArtistName,
+                Selected = tourDate.ArtistId == a.ArtistId
+            });
+
             return View(new TourDateEdit
             {
                 TourDateId = tourDate.TourDateId,
@@ -79,3 +101,4 @@ namespace Bandemic.MVC.Controllers
         }
     }
 }
+
