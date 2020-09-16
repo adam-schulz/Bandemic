@@ -10,6 +10,8 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Bandemic.MVC.Models;
 using Bandemic.Data;
+using Bandemic.Services;
+using Bandemic.Models.User;
 
 namespace Bandemic.MVC.Controllers
 {
@@ -51,6 +53,25 @@ namespace Bandemic.MVC.Controllers
             {
                 _userManager = value;
             }
+        }
+
+        public ActionResult Index()
+        {
+            var userService = new UserService();
+            var users = userService.GetAllUsers();
+
+            var userList = users.Select(u =>
+            {
+                /* do some stuff */
+
+                return new UserListItem()
+                {
+                    UserId = u.Id,
+                    UserName = u.UserName,
+                    Email = u.Email
+                };
+            }).ToList();
+            return View(userList);
         }
 
         //
