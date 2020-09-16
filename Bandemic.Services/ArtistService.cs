@@ -17,9 +17,7 @@ namespace Bandemic.Services
             _userId = userId;
         }
 
-        public ArtistService()
-        {
-        }
+        public ArtistService() {}
 
         public ArtistDetail GetArtistDetailById(int id)
         {

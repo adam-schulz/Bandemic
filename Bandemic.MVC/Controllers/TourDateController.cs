@@ -23,13 +23,23 @@ namespace Bandemic.MVC.Controllers
 
             List<Artist> Artists = new ArtistService().GetArtists().ToList();
 
-            var query = from a in Artists
+            var artistQuery = from a in Artists
                         select new SelectListItem()
                         {
                             Value = a.ArtistId.ToString(),
                             Text = a.ArtistName
                         };
-            ViewBag.ArtistId = query.ToList();
+            ViewBag.ArtistId = artistQuery.ToList();
+
+            List<Venue> Venues = new VenueService().GetVenues().ToList();
+
+            var venueQuery = from v in Venues
+                        select new SelectListItem()
+                        {
+                            Value = v.VenueId.ToString(),
+                            Text = v.VenueName
+                        };
+            ViewBag.VenueId = venueQuery.ToList();
 
             return View();
         }
@@ -67,6 +77,14 @@ namespace Bandemic.MVC.Controllers
                 Value = a.ArtistId.ToString(),
                 Text = a.ArtistName,
                 Selected = tourDate.ArtistId == a.ArtistId
+            });
+
+            List<Venue> Venues = new VenueService().GetVenues().ToList();
+            ViewBag.VenueId = Venues.Select(v => new SelectListItem()
+            {
+                Value = v.VenueId.ToString(),
+                Text = v.VenueName,
+                Selected = tourDate.VenueId == v.VenueId
             });
 
             return View(new TourDateEdit

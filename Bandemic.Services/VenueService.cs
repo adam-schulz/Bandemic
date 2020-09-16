@@ -26,6 +26,8 @@ namespace Bandemic.Services
             }
         }
 
+        public VenueService() {}
+
         public VenueDetail GetVenueDetailById(int id)
         {
             using (var ctx = new ApplicationDbContext())
@@ -54,6 +56,14 @@ namespace Bandemic.Services
                 });
 
                 return query.ToArray();
+            }
+        }
+
+        public IEnumerable<Venue> GetVenues()
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                return ctx.Venues.ToList();
             }
         }
 
