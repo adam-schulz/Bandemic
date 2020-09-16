@@ -11,8 +11,11 @@ namespace Bandemic.Models.Venue
     {
         public int VenueId { get; set; }
         [Required]
+        [Display(Name = "Venue Name")]
         public string VenueName { get; set; }
+        [Display(Name = "Address")]
         public string VenueAddress { get; set; }
+        [Display(Name = "Location")]
         public string VenueLocation { get; set; }
     }
 }

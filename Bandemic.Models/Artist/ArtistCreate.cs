@@ -11,6 +11,7 @@ namespace Bandemic.Models
     public class ArtistCreate
     {
         [Required]
+        [Display(Name = "Artist Name")]
         public string ArtistName { get; set; }
         [Required]
         public Genre Genre { get; set; }

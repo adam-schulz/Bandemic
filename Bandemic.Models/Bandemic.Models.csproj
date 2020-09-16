@@ -51,7 +51,6 @@
     <Compile Include="TourDate\TourDateDetail.cs" />
     <Compile Include="TourDate\TourDateEdit.cs" />
     <Compile Include="TourDate\TourDateListItem.cs" />
-    <Compile Include="User\UserListItem.cs" />
     <Compile Include="Venue\VenueCreate.cs" />
     <Compile Include="Venue\VenueDetail.cs" />
     <Compile Include="Venue\VenueEdit.cs" />

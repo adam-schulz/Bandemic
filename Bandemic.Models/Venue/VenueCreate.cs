@@ -10,10 +10,13 @@ namespace Bandemic.Models.Venue
     public class VenueCreate
     {
         [Required]
+        [Display(Name = "Venue Name")]
         public string VenueName { get; set; }
         [Required]
+        [Display(Name = "Address")]
         public string VenueAddress { get; set; }
         [Required]
+        [Display(Name = "Location")]
         public string VenueLocation { get; set; }
     }
 }

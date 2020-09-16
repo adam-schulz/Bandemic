@@ -60,6 +60,10 @@
     <Compile Include="Migrations\202009151724249_initialCreation.Designer.cs">
       <DependentUpon>202009151724249_initialCreation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202009161846586_CSUpdate.cs" />
+    <Compile Include="Migrations\202009161846586_CSUpdate.Designer.cs">
+      <DependentUpon>202009161846586_CSUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TourDate.cs" />
@@ -72,6 +76,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202009151724249_initialCreation.resx">
       <DependentUpon>202009151724249_initialCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009161846586_CSUpdate.resx">
+      <DependentUpon>202009161846586_CSUpdate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -10,6 +10,7 @@ namespace Bandemic.Models.TourDate
     public class TourDateDetail
     {
         public int TourDateId { get; set; }
+        [Display(Name = "Date of Show")]
         public DateTime DateOfShow { get; set; }
         public int ArtistId { get; set; }
         [Display(Name = "Artist")]

@@ -4,16 +4,13 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Upcoming Shows In Your Area</h2>
 
 <p>
     @Html.ActionLink("Create New Tour Date", "Create")
 </p>
 <table class="table">
     <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.TourDateId)
-        </th>
         <th>
             @Html.DisplayNameFor(model => model.DateOfShow)
         </th>
@@ -28,9 +25,6 @@
 
 @foreach (var item in Model) {
 <tr>
-    <td>
-        @Html.DisplayFor(modelItem => item.TourDateId)
-    </td>
     <td>
         @Html.DisplayFor(modelItem => item.DateOfShow)
     </td>
