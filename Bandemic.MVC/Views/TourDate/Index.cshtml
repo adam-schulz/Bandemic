@@ -4,7 +4,7 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Upcoming Shows In Your Area</h2>
+<h2>Upcoming Shows</h2>
 
 <p>
     @Html.ActionLink("New Tour Date", "Create")
@@ -29,7 +29,7 @@
         @Html.DisplayFor(modelItem => item.DateOfShow)
     </td>
     <td>
-        @Html.DisplayFor(modelItem => item.Artist)
+        @Html.DisplayFor(modelItem => item.ArtistId)
     </td>
     <td>
         @Html.DisplayFor(modelItem => item.VenueId)
