@@ -44,7 +44,6 @@ namespace Bandemic.Services
                     DateOfShow = model.DateOfShow,
                     ArtistId = model.ArtistId,
                     VenueId = model.VenueId
-
                 };
 
                 ctx.TourDates.Add(newTourDate);
@@ -60,8 +59,7 @@ namespace Bandemic.Services
                     TourDateId = t.TourDateId,
                     DateOfShow = t.DateOfShow,
                     ArtistId = t.ArtistId,
-                    VenueId = t.VenueId,
-                    
+                    VenueId = t.VenueId
                 });
 
                 return query.ToArray();

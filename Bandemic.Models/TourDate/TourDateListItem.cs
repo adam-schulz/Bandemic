@@ -13,9 +13,7 @@ namespace Bandemic.Models.TourDate
         public int TourDateId { get; set; }
         [Display(Name = "Date of Show")]
         public DateTime DateOfShow { get; set; }
-        [Display(Name = "Artist")]
         public int ArtistId { get; set; }
-        [Display(Name = "Venue")]
         public int VenueId { get; set; }
     }
 }

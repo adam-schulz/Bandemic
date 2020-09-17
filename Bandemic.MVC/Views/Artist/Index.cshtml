@@ -23,7 +23,7 @@
 @foreach (var item in Model) {
     <tr>
     <td>
-        @Html.DisplayFor(modelItem => item.ArtistName, "Artist")
+        @Html.DisplayFor(modelItem => item.ArtistName)
     </td>
     <td>
         @Html.DisplayFor(modelItem => item.Genre)
@@ -31,7 +31,7 @@
     <td>
         @Html.ActionLink("Edit", "Edit", new { id = item.ArtistId }) |
         @Html.ActionLink("Details", "Details", new { id = item.ArtistId }) |
-        @Html.ActionLink("Delete", "Delete", new { id = item.ArtistId })
+        @Html.ActionLink("Delete", "Delete", new { id = item.ArtistId }) |
         <br />
         <br />
         @Html.ActionLink("See Tour Dates", "List", "TourDate", new { id = item.ArtistId }, null) |
