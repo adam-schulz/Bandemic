@@ -1,5 +1,6 @@
 ﻿using Bandemic.Models.Venue;
 using Bandemic.Services;
+using Microsoft.AspNet.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -76,6 +77,35 @@ namespace Bandemic.MVC.Controllers
 
             ModelState.AddModelError("", "An error occured, unable to create new venue.");
             return View(model);
+        }
+
+        public ActionResult Delete(int id)
+        {
+            var svc = CreateVenueService();
+            var model = svc.GetVenueDetailById(id);
+
+            return View(model);
+        }
+
+        [HttpPost]
+        [ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteVenue(int id)
+        {
+            var service = CreateVenueService();
+
+            service.DeleteVenue(id);
+
+            TempData["SaveResult"] = "Venue was removed from database.";
+
+            return RedirectToAction("Index");
+        }
+
+        private VenueService CreateVenueService()
+        {
+            var userId = Guid.Parse(User.Identity.GetUserId());
+            var service = new VenueService(userId);
+            return service;
         }
     }
 }

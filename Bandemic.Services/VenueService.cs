@@ -10,6 +10,8 @@ namespace Bandemic.Services
 {
     public class VenueService
     {
+        private Guid userId;
+
         public bool CreateVenue(VenueCreate model)
         {
             using (var ctx = new ApplicationDbContext())
@@ -26,7 +28,12 @@ namespace Bandemic.Services
             }
         }
 
-        public VenueService() {}
+        public VenueService() { }
+
+        public VenueService(Guid userId)
+        {
+            this.userId = userId;
+        }
 
         public VenueDetail GetVenueDetailById(int id)
         {
@@ -51,7 +58,7 @@ namespace Bandemic.Services
                 {
                     VenueId = v.VenueId,
                     VenueName = v.VenueName,
-                    VenueAddress =v.VenueAddress,
+                    VenueAddress = v.VenueAddress,
                     VenueLocation = v.VenueLocation
                 });
 
@@ -75,6 +82,21 @@ namespace Bandemic.Services
                 venue.VenueName = model.VenueName;
                 venue.VenueAddress = model.VenueAddress;
                 venue.VenueLocation = model.VenueLocation;
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
+
+        public bool DeleteVenue(int venueId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Venues
+                        .Single(v => v.VenueId == venueId);
+
+                ctx.Venues.Remove(entity);
 
                 return ctx.SaveChanges() == 1;
             }

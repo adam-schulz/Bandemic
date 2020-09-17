@@ -78,12 +78,33 @@ namespace Bandemic.MVC.Controllers
             return View(model);
         }
 
+        public ActionResult Delete(int id)
+        {
+            var svc = CreateArtistService();
+            var model = svc.GetArtistDetailById(id);
+
+            return View(model);
+        }
+
+        [HttpPost]
+        [ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeletePost(int id)
+        {
+            var service = CreateArtistService();
+
+            service.DeleteArtist(id);
+
+            TempData["SaveResult"] = "Artist was removed from database.";
+
+            return RedirectToAction("Index");
+        }
+
         private ArtistService CreateArtistService()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());
             var service = new ArtistService(userId);
             return service;
-               
         }
     }
 }

@@ -1,14 +1,16 @@
 ﻿@model Bandemic.Models.Venue.VenueDetail
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Delete";
 }
 
-<h2>Venue Details</h2>
+<h2>Delete Venue</h2>
 
+<h4>Are you sure you want to remove this venue from the database?</h4>
 <div>
     <hr />
     <dl class="dl-horizontal">
+
         <dt>
             @Html.DisplayNameFor(model => model.VenueName)
         </dt>
@@ -33,10 +35,14 @@
             @Html.DisplayFor(model => model.VenueLocation)
         </dd>
 
-
     </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.VenueId }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>

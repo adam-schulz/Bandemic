@@ -10,6 +10,17 @@ namespace Bandemic.Services
 {
     public class TourDateService
     {
+        private Guid userId;
+
+        public TourDateService(Guid userId)
+        {
+            this.userId = userId;
+        }
+
+        public TourDateService()
+        {
+        }
+
         public TourDateDetail GetTourDateDetailById(int id)
         {
             using (var ctx = new ApplicationDbContext())
@@ -49,7 +60,8 @@ namespace Bandemic.Services
                     TourDateId = t.TourDateId,
                     DateOfShow = t.DateOfShow,
                     ArtistId = t.ArtistId,
-                    VenueId = t.VenueId
+                    VenueId = t.VenueId,
+                    
                 });
 
                 return query.ToArray();
@@ -63,6 +75,21 @@ namespace Bandemic.Services
                 tourDate.DateOfShow = model.DateOfShow;
                 tourDate.ArtistId = model.ArtistId;
                 tourDate.VenueId = model.VenueId;
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
+
+        public bool DeleteTourDate(int tourDateId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .TourDates
+                        .Single(t => t.TourDateId == tourDateId);
+
+                ctx.TourDates.Remove(entity);
 
                 return ctx.SaveChanges() == 1;
             }

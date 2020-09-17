@@ -1,6 +1,7 @@
 ﻿using Bandemic.Data;
 using Bandemic.Models.TourDate;
 using Bandemic.Services;
+using Microsoft.AspNet.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -116,6 +117,35 @@ namespace Bandemic.MVC.Controllers
 
             ModelState.AddModelError("", "An error occured, unable to create new tour date.");
             return View(model);
+        }
+
+        public ActionResult Delete(int id)
+        {
+            var svc = CreateTourDateService();
+            var model = svc.GetTourDateDetailById(id);
+
+            return View(model);
+        }
+
+        [HttpPost]
+        [ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteTourDate(int id)
+        {
+            var service = CreateTourDateService();
+
+            service.DeleteTourDate(id);
+
+            TempData["SaveResult"] = "Tour Date was removed from database.";
+
+            return RedirectToAction("Index");
+        }
+
+        private TourDateService CreateTourDateService()
+        {
+            var userId = Guid.Parse(User.Identity.GetUserId());
+            var service = new TourDateService(userId);
+            return service;
         }
     }
 }
