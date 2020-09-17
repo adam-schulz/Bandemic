@@ -1,0 +1,16 @@
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Models\bin\Release\Bandemic.Models.dll
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Models\bin\Release\Bandemic.Models.pdb
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Models\bin\Release\Bandemic.Data.dll
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Models\bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Models\bin\Release\Microsoft.AspNet.Identity.Core.dll
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Models\bin\Release\EntityFramework.dll
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Models\bin\Release\Bandemic.Data.pdb
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Models\bin\Release\Bandemic.Data.dll.config
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Models\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Models\bin\Release\Microsoft.AspNet.Identity.Core.xml
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Models\bin\Release\EntityFramework.xml
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Models\obj\Release\Bandemic.Models.csprojAssemblyReference.cache
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Models\obj\Release\Bandemic.Models.csproj.CoreCompileInputs.cache
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Models\obj\Release\Bandemic.Models.csproj.CopyComplete
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Models\obj\Release\Bandemic.Models.dll
+C:\Users\adamm\Desktop\ElevenFiftyProjects\RedBadge\Bandemic\Bandemic.Models\obj\Release\Bandemic.Models.pdb
